@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haseeb | Professional Web Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* HEADER */
+header{
+    background:#1e293b;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+header h1{
+    color:#38bdf8;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.hero h2{
+    font-size:45px;
+}
+.hero span{
+    color:#38bdf8;
+}
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+    color:#cbd5e1;
+}
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+/* SKILLS */
+.skills{
+    padding:60px 10%;
+    text-align:center;
+}
+.skills h2{
+    margin-bottom:40px;
+}
+.skill-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.skill{
+    background:#1e293b;
+    padding:30px;
+    width:250px;
+    border-radius:15px;
+    transition:0.3s;
+}
+.skill:hover{
+    transform:translateY(-10px);
+    background:#334155;
+}
+
+/* CONTACT FORM */
+.contact{
+    padding:60px 10%;
+    text-align:center;
+}
+.contact form{
+    max-width:500px;
+    margin:auto;
+}
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+}
+.contact button{
+    padding:12px 25px;
+    background:#38bdf8;
+    border:none;
+    border-radius:25px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#1e293b;
+    padding:40px;
+    text-align:center;
+}
+.social a{
+    margin:10px;
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+.whatsapp{background:#25D366;}
+.facebook{background:#1877F2;}
+.instagram{background:#E4405F;}
+.twitter{background:#1DA1F2;}
+.email{background:#f59e0b;}
+
+.floating-whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 18px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero h2{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Haseeb</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hi, I'm <span>Haseeb</span></h2>
+    <p>Professional Web Developer | HTML | CSS | JavaScript</p>
+    <a href="#contact" class="btn">Hire Me</a>
+</section>
+
+<section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-box">
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Creating structured and semantic web pages.</p>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Modern responsive and animated designs.</p>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <p>Dynamic and interactive web functionality.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Send Me a Message</h2>
+
+    <!-- FORMSpree Integrated -->
+    <form action="https://formspree.io/f/xreayzyo" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <h2>Contact Details</h2>
+
+    <div class="social">
+        <a href="https://wa.me/923316473701" class="whatsapp" target="_blank">WhatsApp</a>
+        <a href="#" class="facebook" target="_blank">Facebook</a>
+        <a href="#" class="instagram" target="_blank">Instagram</a>
+        <a href="#" class="twitter" target="_blank">Twitter</a>
+        <a href="mailto:mndnawab@gmail.com" class="email">Email</a>
+    </div>
+
+    <p style="margin-top:20px;">Phone: 0331 6473701</p>
+    <p>Email: mndnawab@gmail.com</p>
+    <p style="margin-top:10px;">© 2026 Haseeb | All Rights Reserved</p>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/923316473701" class="floating-whatsapp" target="_blank">💬</a>
+
+</body>
+</html>
